@@ -69,6 +69,23 @@ When documents disagree, stop and surface the conflict. The user-approved produc
 - Do not add a dependency, service, or architectural layer unless the requirement cannot be met cleanly with the locked stack.
 - Preserve backward compatibility for released API contracts and migrations unless a breaking change is explicitly approved.
 
+## Backend commands
+
+Run these commands from the repository root unless noted otherwise:
+
+```bash
+# Set up the Python 3.13 environment and install the locked dependency set.
+python3 -m venv server/.venv
+server/.venv/bin/python -m pip install -r server/requirements.lock
+
+# Run the API locally.
+cd server && .venv/bin/uvicorn app.main:app --reload
+
+# Verify backend changes.
+cd server && .venv/bin/pytest
+cd server && .venv/bin/ruff check .
+```
+
 ## Change checklist
 
 Before completing a change:
