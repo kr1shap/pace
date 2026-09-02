@@ -59,18 +59,9 @@ cover/
 instance/
 .webassets-cache
 
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
 # PyBuilder
 .pybuilder/
 target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
 
 # IPython
 profile_default/
@@ -79,21 +70,13 @@ ipython_config.py
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
 # Redis
 *.rdb
 *.aof
 *.pid
 
-
 # ActiveMQ
 activemq-data/
-
-# SageMath parsed files
-*.sage.py
 
 # Environments
 .env
@@ -134,3 +117,24 @@ __pycache__/
 *.py[cod]
 
 docs/superpowers/
+
+# Xcode user and build files
+DerivedData/
+build/
+*/DerivedData/
+*/build/*
+xcuserdata/
+*/xcuserdata/**
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
